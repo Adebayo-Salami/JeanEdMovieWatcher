@@ -33,7 +33,7 @@ export default class UtilityService {
     if (criterias) {
       const queryString = Object.entries(criterias as object)
         .filter(([key, value]) => value !== undefined)
-        .map(([key, value]) => `Filters.${key}=${value}`)
+        .map(([key, value]) => `${key}=${value}`)
         .join("&");
 
       return query + queryString;

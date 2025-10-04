@@ -14,11 +14,13 @@ also showing movie full detail.</p>
 Getting Started
 To get started with JE Movie Search App, follow these steps:
 
-Clone this repository to your local machine.
-Run npm install to install the required dependencies.
-Get a OMDB API key at https://omdbapi/apidocs. You'll have to create an account first.
-Add the API key to appsettings.json (Being an open source api, an api key has been pre configured but incase the free limits gets exhausted, kindly replace with your api key)
-Run npm run dev to start the web server and dotnet start to run backend server.
+<h4>Clone this repository to your local machine.</h4>
+<ul>
+  <li>Run npm install to install the required dependencies.</li>
+  <li>Get a OMDB API key at https://omdbapi/apidocs. You'll have to create an account first.</li>
+  <li>Add the API key to appsettings.json (Being an open source api, an api key has been pre configured but incase the free limits gets exhausted, kindly replace with your api key)</li>
+  <li>Run npm run dev to start the web server and dotnet start to run backend server.</li>
+</ul>
 
 This is a movie based project, view screenshots of web application below;
 

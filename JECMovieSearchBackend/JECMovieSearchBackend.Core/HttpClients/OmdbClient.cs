@@ -26,6 +26,7 @@ namespace JECMovieSearchBackend.Core.HttpClients
         {
             var response = await _client.GetAsync($"{_baseUrl}?apikey={_apiKey}&s={title}");
             response.EnsureSuccessStatusCode();
+            var ted = await response.Content.ReadAsStringAsync();
             return await response.Content.ReadFromJsonAsync<SearchMoviesByTitleResponseVM>();
         }
 

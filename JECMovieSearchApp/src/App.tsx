@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
 import MovieList from "./components/MovieList";
 import { Movie } from "./types/movie";

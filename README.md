@@ -9,6 +9,7 @@ also showing movie full detail.</p>
   <li>Integrates with OMDB Api to get movie information and powers the movie search</li>
   <li>Backend Caching enabled to pptimize and speed up Api request and also reduce calls made to Api</li>
   <li>Support boths SQL server and Sqlite for database</li>
+  <li>For unit test, NUnit and Moq library was used</li>
 </ol>
 <br />
 Getting Started

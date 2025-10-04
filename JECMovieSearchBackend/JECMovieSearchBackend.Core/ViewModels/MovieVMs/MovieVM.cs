@@ -1,4 +1,5 @@
-﻿using JECMovieSearchBackend.Entities.OMDB;
+﻿using JECMovieSearchBackend.Core.ViewModels.MovieRatingVMs;
+using JECMovieSearchBackend.Entities.OMDB;
 
 #nullable disable
 
@@ -22,7 +23,7 @@ namespace JECMovieSearchBackend.Core.ViewModels.MovieVMs
         public string Writer { get; set; }
         public string Actors { get; set; }
         public string Awards { get; set; }
-        public List<MovieRating> Ratings { get; set; }
+        public List<MovieRatingVM> Ratings { get; set; }
 
         public static implicit operator MovieVM(Movie model)
         {
@@ -46,7 +47,7 @@ namespace JECMovieSearchBackend.Core.ViewModels.MovieVMs
                     Writer = model.Writer,
                     Actors = model.Actors,
                     Awards = model.Awards,
-                    Ratings = model.Ratings?.ToList() ?? []
+                    Ratings = model.Ratings?.Select(x => (MovieRatingVM)x).ToList() ?? []
                 };
         }
     }

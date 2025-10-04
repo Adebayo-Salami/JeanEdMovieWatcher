@@ -21,7 +21,7 @@ namespace JECMovieSearchBackend.Controllers
 
         [HttpGet("movieId")]
         [ProducesResponseType(typeof(ApiResponse<MovieVM>), 200)]
-        public async Task<IActionResult> GetSearchHistory(string movieId)
+        public async Task<IActionResult> GetMovieDetail(string movieId)
         {
             try
             {

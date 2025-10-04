@@ -349,12 +349,13 @@ appsettings.Development.json
 /ScaffoldContext
 /ScaffoldModels
 
-/.vs/JECMovieSearchBackend/JECMovieSearchBackend/DesignTimeBuild/.dtbcache.v2
+/JECMovieSearchBackend/JECMovieSearchBackend/DesignTimeBuild/.dtbcache.v2
 /.vs/
 /.vs/JECMovieSearchBackend/JECMovieSearchBackend/FileContentIndex/49d1e396-27dd-4468-833a-881a4e114f29.vsidx
 /.vs/JECMovieSearchBackend/JECMovieSearchBackend/FileContentIndex/bfc063d6-5e46-4e76-848f-b67eb8438b11.vsidx
 /.vs/JECMovieSearchBackend/JECMovieSearchBackend/FileContentIndex/cea7dc8e-8851-4430-b1ce-9d808e66f8c7.vsidx
 /.vs/JECMovieSearchBackend/JECMovieSearchBackend/FileContentIndex/fe98cad4-79fc-46c3-aa48-a8d57f032680.vsidx
+/.vs/JECMovieSearchApp/node_modules/
 /.vs/JECMovieSearchBackend/JECMovieSearchBackend/bin/
 /.vs/JECMovieSearchBackend/JECMovieSearchBackend/obj/
 /.vs/JECMovieSearchBackend/JECMovieSearchBackend.Core/bin/
@@ -380,6 +381,8 @@ appsettings.Development.json
 /.vs/JECMovieSearchBackend/JECMovieSearchBackend.Service/obj
 /.vs/JECMovieSearchBackend/JECMovieSearchBackend.Test/bin
 /.vs/JECMovieSearchBackend/JECMovieSearchBackend.Test/obj
+JECMovieSearchApp/node_modules
+JECMovieSearchApp/node_modules/
 .vs/JECMovieSearchBackend/JECMovieSearchBackend/bin
 .vs/JECMovieSearchBackend/JECMovieSearchBackend/obj
 .vs/JECMovieSearchBackend/JECMovieSearchBackend.Core/bin

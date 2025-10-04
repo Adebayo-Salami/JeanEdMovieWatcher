@@ -19,7 +19,7 @@ namespace JECMovieSearchBackend.Controllers
             _movieService = movieService;
         }
 
-        [HttpGet("movieId")]
+        [HttpGet("{movieId}")]
         [ProducesResponseType(typeof(ApiResponse<MovieVM>), 200)]
         public async Task<IActionResult> GetMovieDetail(string movieId)
         {

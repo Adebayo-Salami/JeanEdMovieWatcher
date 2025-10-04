@@ -1,19 +1,35 @@
 import React from "react";
 import { Movie } from "../types/movie";
+import "../styles/MovieCard.css";
 
-const MovieCard: React.FC<Movie> = ({ poster, title, genre, year }) => (
-  <div className="card h-100 shadow-sm">
+export interface Props {
+  movie: {
+    imdbID: string;
+    poster: string;
+    title: string;
+    genre: string;
+    year: string;
+  };
+  onSelected: (movieId: string) => void;
+}
+
+const MovieCard: React.FC<Props> = ({ movie, onSelected }) => (
+  <div
+    className="card h-100 shadow-sm movie-card"
+    style={{ cursor: "pointer" }}
+    onClick={() => onSelected(movie.imdbID)}
+  >
     <img
-      src={poster}
+      src={movie.poster}
       className="card-img-top"
-      alt={title}
+      alt={movie.title}
       style={{ objectFit: "cover", height: "300px" }}
     />
     <div className="card-body d-flex flex-column">
-      <h5 className="card-title mb-2">{title}</h5>
-      <p className="card-text text-muted mb-1">{genre}</p>
+      <h5 className="card-title mb-2">{movie.title}</h5>
+      <p className="card-text text-muted mb-1">{movie.genre}</p>
       <p className="card-text">
-        <small className="text-secondary">{year}</small>
+        <small className="text-secondary">{movie.year}</small>
       </p>
     </div>
   </div>

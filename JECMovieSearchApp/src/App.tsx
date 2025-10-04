@@ -4,6 +4,7 @@ import "./App.css";
 import MovieList from "./components/MovieList";
 import { Movie } from "./types/movie";
 import MovieService from "./services/movie-service";
+import SearchBar from "./components/SearchBar";
 
 function App() {
   const [movies, setMovies] = useState<Movie[]>([]);
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <>
+      <SearchBar onSearch={(searchKeyword) => setKeyword(searchKeyword)} />
       <MovieList movies={movies} />
     </>
   );
